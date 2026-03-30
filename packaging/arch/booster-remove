@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+uki_dir=/efi/EFI/Linux
+
 kernels=()
 all=0
 
@@ -26,5 +28,5 @@ for kernel in "${kernels[@]}"; do
   fi
   read -r pkgbase < "${kernel}/pkgbase"
 
-  rm -f /boot/booster-${pkgbase}.img
+  rm -f "${uki_dir}/booster-${pkgbase}.efi"
 done

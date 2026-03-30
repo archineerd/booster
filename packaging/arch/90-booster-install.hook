@@ -7,7 +7,7 @@ Target = usr/lib/booster/*
 Target = usr/bin/booster
 
 [Action]
-Description = Updating linux booster images...
+Description = Updating linux booster UKIs...
 When = PostTransaction
 Exec = /usr/share/libalpm/scripts/booster-install
 NeedsTargets

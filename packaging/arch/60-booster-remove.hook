@@ -10,7 +10,7 @@ Target = booster
 Target = booster-git
 
 [Action]
-Description = Removing linux booster images...
+Description = Removing linux booster UKIs...
 When = PreTransaction
 Exec = /usr/share/libalpm/scripts/booster-remove
 NeedsTargets
